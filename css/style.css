@@ -3,6 +3,10 @@ Colors used:
 Primary Color (Blue): #1877F2;
 Secondary Color (Green): #white; */
 
+* {
+    padding: 0;
+    margin: 0;
+}
 
 body {
     background-color: #1877F2;
@@ -10,15 +14,15 @@ body {
     line-height: 1.4;
 }
 
-/* ================== */
+/* =======header=========== */
 
+.container {
+    padding: 100%px;
+    margin: auto;
+}
 
 img {
     width: 100%;
-}
-
-.img logo {
-    color: red;
 }
 
 .row {
@@ -26,14 +30,18 @@ img {
 }
 
 h2 {
+    text-align: center;
     font-size: 3.25em;
     font-weight: 700;
 }
 
 h3 {
     font-size: 1.75em;
-    /*2.75 x 16px, or 44px*/
     font-weight: 400;
+}
+
+.preview h3 {
+    text-align: center;
 }
 
 h4 {
@@ -43,24 +51,46 @@ h4 {
     font-weight: 400;
 }
 
+h5 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+
+#fonoscorpHeader {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    background-color: #3F508C;
+    padding: 4px;
+}
+
 nav {
-    margin-bottom: 60px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 nav ul {
-    width: 100%;
-
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 60%;
 }
 
 nav li {
+    font-size: 12px;
+    text-align: center;
     width: 25%;
-    float: right;
+    float: left;
     list-style: none;
+    margin-bottom: 10px;
 }
 
 a {
-    color: #1877F2;
     text-decoration: none;
+    color: #ffffff;
 }
 
 a:visited {
@@ -75,7 +105,59 @@ a:active {
     color: #D77037;
 }
 
-/* ================== */
+/* ========main section========== */
+.main {
+    margin-top: 160px;
+}
+
+.main-project {
+    margin-top: 160px;
+    padding: 20px;
+}
+
+.profile-name {
+    text-align: center;
+}
+
+.pic {
+    padding: 40px;
+}
+
+.pic img {
+    border-radius: 120px;
+}
+
+.ideation ul {
+    padding: 20px;
+    margin: auto;
+}
+
+.brief,
+.wireframe-text p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mockups {
+    margin-top: 20px;
+}
+}
+
+.tools-and-skills-heading {
+    text-align: center;
+}
+
+.tools-and-skills {
+    display: inline-block;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.tools {
+    margin-left: 20px;
+}
+
 .button {
     width: 280px;
     border: 1px solid #ffffff;
@@ -87,36 +169,180 @@ a:active {
     padding: 10px;
     border-radius: 20px;
     transition: 0.2s opacity;
+    margin-top: 10px;
 }
 
-/* ================== */
-Footer
-
-/* ================== */
-.contact-text {
+.resume {
     text-align: center;
 }
 
-.contact {
+/* ========Footer========== */
+
+.contact-text p {
+    text-align: center;
+    font-size: 12px;
+}
+
+#footer {
+    background-color: #3F508C;
     text-align: center;
 }
 
+.contact,
 .contact a {
+    font-size: 12px;
     color: #ffffff;
 }
 
-.social-link {
-    display: block;
+.contact a:hover {
+    color: #D9D9D9;
 }
 
-.social-link a {
-    display: inline-block;
-    width: 30%;
-    float: right;
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: #F4C0B2;
+    color: #ffffff;
+}
+
+.fa-linkedin {
+    background-color: #F4C0B2;
+    color: #ffffff;
+}
+
+.fa-google {
+    background-color: #F4C0B2;
+    color: #ffffff;
 }
 
 .copy {
     width: 100%;
+    font-size: 12px;
     display: inline-block;
     text-align: center;
+}
+
+/* ========Responsive========== */
+@media screen and (min-width: 992px) {
+    h5 {
+        font-size: 24px;
+        width: 40%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .project-sample {
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+
+    .project-sample img {
+        width: 50%;
+        float: left;
+        padding: 20px;
+    }
+
+    .project-text {
+        padding-top: 120px;
+    }
+
+    .tools-and-skills {
+        width: 100%;
+        display: inline-block;
+        margin: auto;
+    }
+
+    .tools {
+        width: 40%;
+        float: left;
+    }
+
+    .tools h4 {
+        text-align: center;
+    }
+
+    .tools ul {
+        margin-left: 120px;
+    }
+
+    .profile-pic {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .profile-pic img {
+        width: 450px;
+        border-radius: 80px;
+    }
+
+    .about p {
+        width: 50%;
+        margin: auto;
+        line-height: 2.8;
+    }
+
+    .main-project {
+        margin-top: 160px;
+    }
+
+    .project-pic img {
+        display: block;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .brief {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ideation,
+    .inspiration,
+    .typo,
+    .frames,
+    .mockups {
+        padding: 10px;
+    }
+
+    .mockups {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inspiration,
+    .frames {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .inspiration,
+    .frames {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+background-color: lightblue;
+}
+
 }

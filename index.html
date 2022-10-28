@@ -9,24 +9,25 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <!--Header Section-->
-    <header>
-
+    <header id="fonoscorpHeader">
         <div class="container">
             <!--Logo Section-->
-            <div>
+            <div class="logo">
                 <img src="img/logo-1.svg" width="50" height="70" alt="Fonoscorp">
-
+                </div>
+            <div>
                 <nav>
 
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="vintage-app.html">Work</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#footer">Contact</a></li>
 
                     </ul>
 
@@ -37,14 +38,14 @@
     </header>
 
 
-    <main id="about">
+    <div class="main">
 
         <!--Main Hero Section-->
 
-        <div>
-            <h4>
+        <div class="preview">
+            <h5>
                 Hi, I am Onos, a UI/UX designer based in Wedel, Germany. Creating native, hybrid and web applications is what i do
-            </h4>
+            </h5>
             <h3>
                 Work Preview
             </h3>
@@ -57,15 +58,14 @@
         <!--Project Section-->
         <div class="container">
             <!--Project 1 Section-->
-            <div class="row">
+            <div class="row project-sample">
                 <div class="column">
                     <picture>
-                        <source srcset="img/vintage-app-img/vintagepic.png" media="(max-width:767px)" />
                         <img src="img/vintage-app-img/vintagepic.png" alt="Project 1" />
                     </picture>
                 </div>
                 <div class="column">
-                    <div>
+                    <div class="project-text">
                         <h3>Vintage Clothing App 01</h3>
                         <p>An app for the old and young, showcasing unique clothing for male and female. Users can create a profile and upload products to sell, review, like or comment about a product</p>
 
@@ -74,15 +74,14 @@
                 </div>
             </div>
             <!--Project 2 Section-->
-            <div class="row">
+            <div class="row project-sample">
                 <div class="column">
                     <picture>
-                        <source srcset="img/vintage-app-img/travelpic.png" media="(max-width:767px)" />
                         <img src="img/vintage-app-img/travelpic.png" alt="Project 2" />
                     </picture>
                 </div>
                 <div class="column">
-                    <div>
+                    <div class="project-text">
                         <h3>Travel App 02</h3>
                         <p>A travel app to allow users create profile, read articles about different travel destination, users can also Like, Comment on and share articles</p>
 
@@ -90,10 +89,10 @@
                     </div>
                 </div>
             </div>
-        </div><br>
+        </div>
 
 
-    </main>
+    </div>
 
     <!--Footer Section-->
 
@@ -104,11 +103,11 @@
 
 
 
-    <footer id="contact">
+    <footer id="footer">
         <div class="container">
             <div class="contact-text">
 
-                <h2>Get in Touch</h2>
+                <h3>Get in Touch</h3>
                 <p>You like my designs and experiences?<br>
                     feel free to contact me via the contact below:</p>
             </div>
@@ -120,15 +119,11 @@
 
 
             <div class="social-link">
-                <a href="https://www.facebook.com/">
-                    <img src="img/icons/facebook-f-brands.svg" alt="Facebook" width="32px" height="42px" /></a>
-                <a href="https://www.linkedin.com/">
-                    <img src="img/icons/linkedin-in.svg" alt="linkedin" width="32px" height="42px" /></a>
-                <a href="https://www.google.com/">
-                    <img src="img/icons/google-brands.svg" alt="Google" width="32px" height="42px" /></a>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+                <a href="https://www.google.com/" class="fa fa-google"></a>
             </div>
-
-
+                
             <div class="copy">
                 <p>Copyright Fonoscorpdesigns&copy;2022</p>
             </div>

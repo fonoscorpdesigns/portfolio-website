@@ -9,24 +9,25 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <!--Header Section-->
-    <header>
-
+      <header id="fonoscorpHeader">
         <div class="container">
             <!--Logo Section-->
-            <div>
+            <div class="logo">
                 <img src="img/logo-1.svg" width="50" height="70" alt="Fonoscorp">
-
+                </div>
+            <div>
                 <nav>
 
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="vintage-app.html">Work</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#footer">Contact</a></li>
 
                     </ul>
 
@@ -38,7 +39,7 @@
 
 
 
-    <main>
+   <div class="main">
 
         <!--Main Hero Section-->
 
@@ -46,20 +47,20 @@
         <div class="container">
             <!--Project 1 Section-->
             <div class="row">
-                <div class="column">
+                <div class="column profile-name">
                     <h2>
                         Akpofure Adjekpiyede
                     </h2>
                 </div>
-                <div class="column pic">
+                <div class="profile-pic">
                     <picture>
-                        <source srcset="img/vintage-app-img/profile_pic.jpeg" width="250" height="300" media="(max-width:767px)" />
-                        <img src="img/vintage-app-img/profile_pic.jpeg" width="350" height="400" alt="Project 1" />
+                        <source srcset="img/vintage-app-img/profile_pic.jpeg" />
+                        <img src="img/vintage-app-img/profile_pic.jpeg" alt="Project 1" />
                     </picture>
                 </div>
             </div>
             <div class="row">
-                <div class="column" id="about">
+                <div class="column about">
                     <p>I have always had the interest in designs while I was studying my Bachelor's degree.
 
                         In 2009 I obtained my bachelor degree certificate and also became Sun certified Java programmer that same year knowing that coding will go along with my designs to become a full stack frontend developer.
@@ -71,9 +72,12 @@
                 </div>
             </div>
             <!--Project 2 Section-->
-            <div class="row">
+            <div class="row tools-and-skills-heading">
                 <h2>Skills & Tools</h2>
-                <div class="column">
+            </div>
+            <div class="row tools-and-skills">
+                <div class="column tools">
+                    <div>
                     <h4>Tools I Use</h4>
                     <ul>
                         <li>Figma</li>
@@ -83,7 +87,9 @@
                         <li>Webflow</li>
                     </ul>
                 </div>
-                <div class="column">
+                </div>
+                    <div class="column tools">
+                    <div>
                     <h4>Relevant Skills</h4>
                     <ul>
                         <li>Prototype</li>
@@ -93,22 +99,27 @@
                         <li>Usability Testing</li>
                     </ul>
                 </div>
-                <div class="column">
-                    <a href="img/cv/cvdocu.pdf" alt="Resume">View Resume</a>
+            </div>
                 </div>
+            <div class="row">
+                <div class="column">
+                    <div class="resume">
+                    <a href="img/cv/cvdocu.pdf" alt="Resume" class="button" >View Resume</a>
+                        </div>
+            </div>
             </div>
         </div>
-    </main>
+    </div>
 
     <!--Footer Section-->
 
 
 
-    <footer id="contact">
+    <footer id="footer">
         <div class="container">
             <div class="contact-text">
 
-                <h2>Get in Touch</h2>
+                <h3>Get in Touch</h3>
                 <p>You like my designs and experiences?<br>
                     feel free to contact me via the contact below:</p>
             </div>
@@ -120,15 +131,11 @@
 
 
             <div class="social-link">
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="img/icons/facebook-f-brands.svg" alt="Facebook" width="32px" height="42px" /></a>
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <img src="img/icons/linkedin-in.svg" alt="linkedin" width="32px" height="42px" /></a>
-                <a href="https://www.google.com/" target="_blank">
-                    <img src="img/icons/google-brands.svg" alt="Google" width="32px" height="42px" /></a>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+                <a href="https://www.google.com/" class="fa fa-google"></a>
             </div>
-
-
+                
             <div class="copy">
                 <p>Copyright Fonoscorpdesigns&copy;2022</p>
             </div>
@@ -136,5 +143,6 @@
         </div>
 
     </footer>
+
 
 </body></html>
