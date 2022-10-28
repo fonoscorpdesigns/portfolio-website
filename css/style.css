@@ -9,7 +9,7 @@ Secondary Color (Green): #white; */
 }
 
 body {
-    background-color: #1877F2;
+    background-color: lightblue;
     font-family: 'Lato', sans-serif;
     line-height: 1.4;
 }
@@ -39,8 +39,9 @@ h3 {
     font-size: 1.75em;
     font-weight: 400;
 }
-
+.preview h5,
 .preview h3 {
+    width: 80%;
     text-align: center;
 }
 
@@ -108,25 +109,20 @@ a:active {
 /* ========main section========== */
 .main {
     margin-top: 160px;
+    padding: 10px;
 }
 
 .main-project {
     margin-top: 160px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .profile-name {
     text-align: center;
 }
-
-.pic {
-    padding: 40px;
+.profile-pic img {
+    border-radius: 80px;
 }
-
-.pic img {
-    border-radius: 120px;
-}
-
 .ideation ul {
     padding: 20px;
     margin: auto;
@@ -236,11 +232,29 @@ a:active {
 
 /* ========Responsive========== */
 @media screen and (min-width: 992px) {
+    body {
+    background-color: #1877F2;
+}
     h5 {
         font-size: 24px;
         width: 40%;
         margin: auto;
         padding: 10px;
+    }
+    .main-project {
+        margin-top: 160px;
+    }
+
+    .project-pic img {
+        display: block;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+     .about p {
+        width: 50%;
+        margin: auto;
+        line-height: 2.8;
     }
 
     .project-sample {
@@ -287,23 +301,6 @@ a:active {
         border-radius: 80px;
     }
 
-    .about p {
-        width: 50%;
-        margin: auto;
-        line-height: 2.8;
-    }
-
-    .main-project {
-        margin-top: 160px;
-    }
-
-    .project-pic img {
-        display: block;
-        width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .brief {
         width: 50%;
         margin-left: auto;
@@ -339,6 +336,10 @@ a:active {
         width: 40%;
         margin-left: auto;
         margin-right: auto;
+    }
+    h5 {
+        font-size: 24px;
+        width: 40%;
     }
 }
 
