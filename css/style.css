@@ -15,14 +15,29 @@ body {
 }
 
 /* =======header=========== */
-
+.logo {
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .container {
-    padding: 100%px;
+    padding: 10px;
     margin: auto;
 }
 
 img {
     width: 100%;
+}
+ 
+.project-pic {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.frames {
+        width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row {
@@ -43,6 +58,8 @@ h3 {
 .preview h3 {
     width: 80%;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h4 {
@@ -111,7 +128,6 @@ a:active {
     margin-top: 160px;
     padding: 10px;
 }
-
 .main-project {
     margin-top: 160px;
     padding: 10px;
@@ -143,13 +159,15 @@ a:active {
 .tools-and-skills-heading {
     text-align: center;
 }
-
-.tools-and-skills {
+.col-md-6 h4 {
+    text-align: center;
     display: inline-block;
-    width: 80%;
-    margin-left: 20px;
 }
-
+.tools-and-skills {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .tools {
     margin-left: 20px;
 }
@@ -180,7 +198,7 @@ a:active {
 }
 
 #footer {
-    background-color: #3F508C;
+    background-color: #F4C0B2;
     text-align: center;
 }
 
@@ -209,17 +227,17 @@ a:active {
 }
 
 .fa-facebook {
-    background-color: #F4C0B2;
+    background-color: #D77037;
     color: #ffffff;
 }
 
 .fa-linkedin {
-    background-color: #F4C0B2;
+    background-color: #D77037;
     color: #ffffff;
 }
 
 .fa-google {
-    background-color: #F4C0B2;
+    background-color: #D77037;
     color: #ffffff;
 }
 
@@ -231,6 +249,54 @@ a:active {
 }
 
 /* ========Responsive========== */
+@media screen and (min-width: 768px) {
+
+
+      .profile-pic{
+          width: 40%;
+          margin-left: auto;
+          margin-right: auto;
+}
+    .container {
+    margin: auto;
+}
+    .inspiration,
+    .frames {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile.name {
+        margin-left: auto;
+    }
+    a:hover {
+    color: #696767;
+}
+    a:active {
+    color: #D77037;
+}
+    h5 {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+        width: 80%;
+    }
+    .tools-and-skills {
+    width: 50%;
+    float: left;
+
+}
+    .col-md-6 ul {
+    width: 100%;
+    float: left;
+    margin-left: 140px;
+}
+    .about p {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media screen and (min-width: 992px) {
     body {
     background-color: #1877F2;
@@ -244,26 +310,21 @@ a:active {
     .main-project {
         margin-top: 160px;
     }
-
+  
     .project-pic img {
         display: block;
-        width: 400px;
         margin-left: auto;
         margin-right: auto;
     }
-     .about p {
-        width: 50%;
-        margin: auto;
-        line-height: 2.8;
-    }
-
     .project-sample {
         display: inline-block;
         margin-bottom: 40px;
     }
-
+.project-design {
+    width: 60%;
+}
+ 
     .project-sample img {
-        width: 50%;
         float: left;
         padding: 20px;
     }
@@ -272,12 +333,11 @@ a:active {
         padding-top: 120px;
     }
 
-    .tools-and-skills {
-        width: 100%;
-        display: inline-block;
+     .about p {
+        width: 50%;
         margin: auto;
+        line-height: 2.8;
     }
-
     .tools {
         width: 40%;
         float: left;
@@ -329,21 +389,7 @@ a:active {
     }
 }
 
-@media screen and (min-width: 768px) {
 
-    .inspiration,
-    .frames {
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    h5 {
-        font-size: 24px;
-        width: 40%;
-    }
-}
-
-background-color: lightblue;
-}
-
+@media only screen and (min-width: 640px) {
+    
 }
