@@ -279,7 +279,7 @@ a:active {
 
 .fa:hover {
     opacity: 0.7;
-    color: #D77037;
+    color: #3F508C;
 }
 
 .fa-facebook {
@@ -365,7 +365,7 @@ a:active {
 }
 
 /* ========Responsive========== */
-@media screen and (min-width: 280px) and (max-width: 374px) {
+@media screen and (max-width: 374px) {
     nav ul {
         width: 100%;
 
