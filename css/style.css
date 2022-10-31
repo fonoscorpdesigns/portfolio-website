@@ -46,7 +46,7 @@ nav li {
     list-style: none;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #8993B7;
+    border: 1px solid rgba(159, 191, 221, 0.3);
     border-radius: 4px;
 }
 
@@ -143,7 +143,7 @@ a {
 }
 
 a:visited {
-    color: #F4C0B2;
+    color: #ffffff;
 }
 
 a:hover {
@@ -195,7 +195,7 @@ a:active {
 }
 
 .ideation ul {
-    padding: 20px;
+    padding-top: 20px;
     margin: auto;
 }
 
@@ -217,10 +217,10 @@ a:active {
 
 .button {
     width: 280px;
-    border: 1px solid #ffffff;
+    border: 1px solid #D77037;
     display: inline-block;
     text-align: center;
-    color: #ffffff;
+    color: #D77037;
     text-decoration: none;
     font-weight: 400;
     padding: 10px;
@@ -230,7 +230,8 @@ a:active {
 }
 
 .button:hover {
-    color: #D77037;
+    color: #E1966C;
+    border: 1px solid #E1966C;
 }
 
 .resume {
@@ -253,6 +254,7 @@ a:active {
 .contact a {
     font-size: 12px;
     color: #ffffff;
+    font-weight: 700
 }
 
 .contact a:hover {
@@ -271,6 +273,7 @@ a:active {
 
 .fa:hover {
     opacity: 0.7;
+    color: #D77037;
 }
 
 .fa-facebook {
@@ -294,6 +297,24 @@ a:active {
     display: inline-block;
     text-align: center;
 }
+@media screen and (min-width: 280px) and (max-width: 374px) {
+     nav ul {
+        width: 100%;
+
+        
+    }
+
+    nav li {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a {
+
+    }
+
+
+    }
 
 /* ========Responsive========== */
 @media screen and (min-width: 768px) {
@@ -419,6 +440,7 @@ a:active {
     }
 
     .grid-item-2 {
+        width: 80%;
         padding: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -464,9 +486,7 @@ a:active {
 
     nav ul {
         width: 50%;
-        float: right;
-        margin-right: 10px;
-        
+        float: right;  
     }
 
     nav li {
@@ -605,7 +625,7 @@ h2 {
 
 
     .brief {
-        width: 50%;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -615,9 +635,6 @@ h2 {
     .frames,
     .mockups {
         padding: 10px;
-    }
-    .ideation img {
-        width: 100%;
     }
 
     .mockups {
@@ -631,4 +648,14 @@ h2 {
         margin-left: auto;
         margin-right: auto;
     }
+    .button {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition: 0.2s opacity;
+}
+
+.button:hover {
+    color: #D4DCFA;
+    border: 1px solid #D4DCFA;
+}
 }
