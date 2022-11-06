@@ -10,24 +10,30 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
     <!--Header Section-->
     <header>
-        <nav>
-            <label class="logo">
-                <img src="img/logo-1.svg" alt="Fonoscorp">
-            </label>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="vintage-app.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#footer">Contact</a></li>
+        <div class="container top-heading">
+            <div class="navtoggle" id="myNavtoggle">
+                <label class="logo">
+                    <img src="img/logo-1.svg" alt="Fonoscorp">
+                </label>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="vintage-app.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa fa-bars"></i></a></li>
+                    </ul>
 
-            </ul>
-
-        </nav>
+                </nav>
+            </div>
+        </div>
     </header>
 
 
@@ -683,5 +689,6 @@
         </div>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 </body></html>
