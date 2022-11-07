@@ -25,19 +25,24 @@ body {
     margin-left: 20px;
 
 }
-
+.navtoggle li:not(:last-child) {
+    display: none;
+}
 nav li {
     display: inline-block;
-    margin: 0 2px;
-    line-height: 20px;
+    margin: 0 10px;
+    line-height: 40px;
     font-size: 12px;
-    text-align: center;
     list-style: none;
     margin-bottom: 10px;
-    ´ border: 1px solid rgba(159, 191, 221, 0.3);
-    border-radius: 4px;
+    border: 1px solid rgba(159, 191, 221, 0.3);
+    border-radius: 2px;
 }
+nav li:hover {
+    border: 1px solid white;
+        transition: .9s;
 
+}
 nav a {
     color: while;
     font-size: 16px;
@@ -376,9 +381,6 @@ a:active {
     display: block;
 }
 
-.navtoggle li:not(:last-child) {
-    display: none;
-}
 
 .logo img {
     margin-top: 15px;
@@ -409,6 +411,7 @@ a:active {
     }
 
     .logo {
+        width: 30%;
         float: left;
         margin-top: 0;
     }
@@ -430,22 +433,25 @@ a:active {
 
     nav ul {
         float: right;
+        margin-right:40px;
 
     }
 
     nav li {
         display: inline-block;
-        margin: 0 4px;
+        margin: 0 2px;
         line-height: 40px;
+        border-radius: 4px;
+        background-color: #3F508C;
+        border: none;
     }
 
     nav a {
-        color: while;
         font-size: 18px;
-        border: 1px solid white;
-        padding: 7px 10px;
-        border-radius: 3px;
+        border: 1px solid rgba(255, 255, 255, 0.19);
+        padding: 7px 20px;
     }
+
 
     .active,
     a:hover {
@@ -582,25 +588,27 @@ a:active {
 
     nav ul {
         float: right;
+        margin-right: 10px;
     }
 
     nav li {
         display: inline-block;
         margin: 0 8px;
         line-height: 40px;
+        border-radius: 4px;
+        background-color: #3F508C;
+        border: none;
     }
 
     nav a {
-
-        color: while;
         font-size: 18px;
-        border: 1px solid white;
-        padding: 7px 10px;
-        border-radius: 3px;
+        border: 1px solid rgba(255, 255, 255, 0.19);
+        padding: 7px 40px;
     }
 
     .active,
     a:hover {
+        color: white;
         border: 1px solid white;
         transition: .5s;
     }
