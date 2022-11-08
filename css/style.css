@@ -390,8 +390,6 @@ a:active {
 @media screen and (max-width: 374px) {
     nav ul {
         width: 100%;
-
-
     }
 
     nav li {
@@ -445,6 +443,11 @@ a:active {
         background-color: #3F508C;
         border: none;
     }
+    nav li:hover {
+    border: 0px solid white;
+        transition: .9s;
+
+}
 
     nav a {
         font-size: 18px;
@@ -470,7 +473,7 @@ a:active {
     }
 
     a:hover {
-        color: #696767;
+     /*   color: #696767; */
     }
 
     a:active {
@@ -538,7 +541,7 @@ a:active {
 
     }
 
-    .grid-item-2 {
+   .grid-item-2 {
         width: 80%;
         padding: 10px;
         margin-left: auto;
@@ -598,6 +601,8 @@ a:active {
         border-radius: 4px;
         background-color: #3F508C;
         border: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
     }
 
     nav a {
@@ -657,13 +662,16 @@ a:active {
     }
 
     .grid-container-2 {
+        width: 60%;
         display: grid;
         grid-template-columns: auto auto;
         padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .grid-item-2 {
-        width: 60%;
+        width: 100%;
         padding: 10px;
         margin-left: auto;
         margin-right: auto;
