@@ -25,9 +25,11 @@ body {
     margin-left: 20px;
 
 }
+
 .navtoggle li:not(:last-child) {
     display: none;
 }
+
 nav li {
     display: inline-block;
     margin: 0 10px;
@@ -38,13 +40,14 @@ nav li {
     border: 1px solid rgba(159, 191, 221, 0.3);
     border-radius: 2px;
 }
+
 nav li:hover {
     border: 1px solid white;
-        transition: .9s;
+    transition: .9s;
 
 }
+
 nav a {
-    color: while;
     font-size: 16px;
     border: 1px solid transparent;
     padding: 2px 6px;
@@ -62,7 +65,7 @@ a:hover {
     margin: auto;
 }
 
-.container.top-heading {
+.top-heading {
     background-color: #3F508C;
 }
 
@@ -104,8 +107,8 @@ h3 {
     font-weight: 400;
 }
 
-.preview h5,
-.preview h3 {
+.preview,
+.preview {
     width: 80%;
     text-align: center;
     margin-left: auto;
@@ -121,18 +124,9 @@ h4 {
 
 h5 {
     text-align: center;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 10px;
     padding: 30px;
-}
-
-#fonoscorpHeader {
-    width: 100%;
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    background-color: #3F508C;
-    padding: 0;
 }
 
 a {
@@ -221,12 +215,11 @@ a:active {
     background-color: #F4C0B2;
     text-decoration: none;
     font-weight: 400;
-    box-shadow: insert 0 0 0 0 #D77037;
+    box-shadow: inset 0 0 0 0 #D77037;
     padding: 10px;
     border-radius: 20px;
     transition: ease-out 0.3s;
     margin-top: 10px;
-    outline: none;
 }
 
 .button:hover {
@@ -431,7 +424,7 @@ a:active {
 
     nav ul {
         float: right;
-        margin-right:40px;
+        margin-right: 40px;
 
     }
 
@@ -443,11 +436,12 @@ a:active {
         background-color: #3F508C;
         border: none;
     }
+
     nav li:hover {
-    border: 0px solid white;
+        border: 0px solid white;
         transition: .9s;
 
-}
+    }
 
     nav a {
         font-size: 18px;
@@ -473,7 +467,7 @@ a:active {
     }
 
     a:hover {
-     /*   color: #696767; */
+        /*   color: #696767; */
     }
 
     a:active {
@@ -541,7 +535,7 @@ a:active {
 
     }
 
-   .grid-item-2 {
+    .grid-item-2 {
         width: 80%;
         padding: 10px;
         margin-left: auto;
